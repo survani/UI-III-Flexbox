@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -63,4 +62,226 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+h1 {
+	font-size: 72px;
+}
+
+.container{
+	width: 1100px;
+	padding: 120px;
+	margin: 0 auto; 
+	/*background: lightgrey;
+	border: 12px solid black;*/
+}
+
+
+
+
+.navigation-bar {
+	list-style: none;
+	margin: 0;
+	background: deepskyblue;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.navigation-bar a{
+	color: whitesmoke;
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+}
+
+
+header{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	position: relative;
+	bottom: 60px;
+	
+}
+
+.header-content-text{
+	text-align: center;
+	position: relative;
+	top: 70px;
+	left: 80px;
+}
+
+
+.section-1-wrap{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+	position: relative;
+	padding: 12px;
+
+}
+
+.section-2-wrap{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+	position: relative;
+	padding: 12px;
+
+}
+
+.middle-img{
+	width: 100%;
+}
+
+.section-3-wrap{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+	position: relative;
+	padding: 12px;
+
+}
+.section-4-wrap{
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+	position: relative;
+	padding: 12px;
+
+}
+
+button{
+	border: 2px solid lightgrey;
+	background: white;
+	width: 25%;
+	height: 15%;
+}
+
+
+footer{
+	display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    margin-top: 61px;
+    margin-bottom: 24px;
+}
+
+footer p{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* SERVICES CSS AFTER THIS */
+
+body{
+	width: 980px;
+	margin: auto;
+	background: whitesmoke;
+}
+.main-container{
+	background: white;
+	margin-top: 25px;
+}
+
+img.logo {
+	position: relative;
+	left: 30px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 29px;
+	
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    width: 115px;
+    padding-bottom: 4px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid lightgrey;
+    align-content: center;	
+}
+
+nav a:hover{
+	background: lightgrey;
+	padding: 12px;
+	border-radius: 3px;
+}
+
+img.services-header-img {
+	width: 100%;
+	margin-top: 12px;
+}
+
+
+.service-container h1{
+	font-size: 30px;
+}
+
+.service-container{
+	border-bottom: 2px solid black;
+	margin-top: 50px;
+	padding-bottom:4%;
+	margin-bottom: 4%;
+	
+}
+
+.path-container{
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	margin-bottom: 5px;
+	justify-content: space-between;
+}
+
+.path-container div{
+	width: 48%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+.path-container div h2 {
+    font-size: 21px;
+}
+
+.path-container div p {
+    font-size: 19px;
+}
+
+.info{
+	display: flex;
+	margin-bottom: 10px;
+	padding-top: 25px;
+	border-top: 2px solid black;
+}
+
+.info div {
+	width: 600px;
+	padding-right: 30px;
+}
+
+.info div ul{
+	margin-top: 28px;
+	list-style: square;
+	padding-left:20px;
+}
